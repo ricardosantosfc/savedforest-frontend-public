@@ -1,0 +1,8 @@
+    <h2 mat-dialog-title>{{configData.form}}</h2>
+    <div mat-dialog-content>
+      <mat-form-field>
+        <input matInput placeholder={{configData.elem}} [(ngModel)]="data.currInput"  
+        [type]="getElem(configData.elem)" (keyup.enter)="dialogRef.close(data)">
+      </mat-form-field>
+    </div>
+  

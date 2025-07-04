@@ -1,0 +1,90 @@
+.logo-container {
+    height: 8vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+   
+  }
+
+  .overlay {  
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home {
+  background-color: rgba(11,24,24, 0.812);
+}
+
+.about {
+  background-color: rgb(22, 22, 12);
+}
+
+.howToPlay {
+/*
+  background-color: rgb(49, 61, 61); #2c3933; #565640*/
+  background-color: #282c2f;
+}
+
+.otherResources {
+  background-color: #2f352b;
+}
+.resetPwd{
+  display: none;
+  /*background-color: rgba(11,24,24, 0.812);*/
+}
+
+  @media only screen and (max-width: 250px) {
+    .logo-container img {
+      width: 18vw;
+      height: 70%;
+      margin: 5px;
+    }
+  }
+
+  @media only screen and (min-width: 250px) and (max-width: 600px) {
+    .logo-container img {
+      width: 16vw;
+      height: 70%;
+      margin: 5px;
+    }
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    .logo-container img {
+      width: 11vw;
+      height: 70%;
+      margin: 10px;
+    }
+    
+  }
+
+
+  /* Large devices (desktops) */
+  @media only screen and (min-width: 768px) {
+    
+   #logo1{
+    width: 55%;
+   }
+   #logo2{
+    width: 90%;
+   }
+   #logo3{
+    width: 87%;
+    
+   }
+   #logo4{
+    width: 90%;
+    max-height: 45px;
+    
+   }
+  }

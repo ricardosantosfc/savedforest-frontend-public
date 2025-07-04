@@ -1,0 +1,33 @@
+<div>
+    <div id="rootDiv" >
+     <!--- <div id="padding-mobile2" *ngIf="(isMobile && !isPortrait)" style="height: 39px; background-image: linear-gradient(180deg, rgba(44, 44, 44, 0.942), rgb(0, 0, 0))"></div>-->
+                  <!-- margin top:50px -->
+                  <div id="unity-container" class="unity-desktop" style="margin-top:0px; background-color: rgba(217, 217, 217, 0);">
+                    <canvas id="unity-canvas" style="background: radial-gradient(circle, rgba(255, 255, 255, 0.871) 0%, rgba(156, 159, 153, 0.849) 100%);"></canvas>
+                    <div id="unity-loading-bar" style="display: none;">
+                      <img src="assets/treegrow.gif" alt="loadingGif" style ="width: 50%; margin-right: .6vw;">
+                     <!-- <h6 class = "loading-text-time" #loadingText style= "display:block ; text-align: center;"> </h6>-->
+                      <mat-progress-bar mode="buffer" ></mat-progress-bar>
+                      <p class = "hover-underline-animation" style= "display:block ; text-align: center;" ></p> 
+                      <h6 class = "loading-text" style= "display:block ; text-align: center;"> LOADING THE GAME...</h6> 
+                      <h6 class = "loading-text-2" style= "display:block ; text-align: center;"> THANK YOU FOR YOUR PATIENCE!</h6> 
+                      <h6 *ngIf="isPortrait"  class = "loading-text-portrait" style= "display:block ; text-align: center;"> For a wider game screen, rotate your device!</h6> 
+                     <!-- ou For a better experience,-->
+                      <!--<div id="unity-logo"></div> -->
+                      <div id="unity-progress-bar-empty" style=" display:none">
+                        <div id="unity-progress-bar-full" style=" display:none; width: 100%;"></div>
+                      </div>
+                    </div>
+                    <div id="unity-footer">
+                      <div id="unity-fullscreen-button"></div>
+
+                    </div>
+                  </div>
+                  <div id="padding-mobile" *ngIf="(isMobile && !isPortrait)" style="height: 39px; background-image: linear-gradient(180deg, rgba(44, 44, 44, 0.942), rgb(0, 0, 0))"></div>
+                  
+                
+ 
+    </div>
+   
+  </div>
+  

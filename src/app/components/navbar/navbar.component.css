@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&family=Lato:wght@400");
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: 
+    #22271e;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+  #3b4838;
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    
+  }
+
+  .active-link:after {
+    transform: scaleY(1.1);
+    transform-origin: bottom left;
+  }
+
+  .nav-item{
+    font-family: 'Lato', sans-serif;
+    padding-top: 20px;
+  }
+
+  @media (min-width: 992px) {
+    #about, #other-resources {
+      margin-left: 15px;
+    }
+    
+  }

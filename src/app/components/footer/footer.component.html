@@ -1,0 +1,35 @@
+
+    <div *ngIf="!(isLandscapeMode && router.url === '/' )" class="container-fluid fixed-bottom">
+      <div class="row ">
+          <div [ngClass]="{'home': router.url === '/', 
+          'about': router.url === '/about', 
+          'howToPlay': router.url === '/howToPlay', 
+          'otherResources': router.url === '/otherResources', 
+          'resetPwd': router.url.includes('resetPwdToken') }" class="logo-container" > 
+              <div class="overlay overflow-hidden">
+                  <div class="row ">
+                  <div class="col-2"></div>
+                  <div class="col-2 justify-content-center align-self-center">
+                    
+                      <img src="assets/fcul_logo_white1.png" id= "logo1"  alt="about" >
+                  </div>
+                  <div class="col-2 justify-content-right align-self-right" >
+                    
+                      <img src="assets/lasige_logo.png" id= "logo2" alt="about">
+                  </div>
+                  <div class="col-2 justify-content-center align-self-center">
+                    
+                      <img src="assets/cat_logo.png" id = "logo3" alt="about">
+                  </div>
+                  <div class="col-2 justify-content-center align-self-center">
+                    
+                      <img src="assets/crcw_logo.png" id="logo4" alt="about">
+                  </div>
+                  <div class="col-2"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+ 
