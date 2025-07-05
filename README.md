@@ -6,6 +6,6 @@ While the game itself was built using Unity, the web-app that supports it is bas
 
 Related saveDforest 1 repositories: 
 - [savedforest-backend](https://github.com/ricardosantosfc/savedforest-backend-public) - Backend server of the web-app
-- [savedforest-unity-game] - Unity game project - COMING SOON...
+- savedforest-unity-game - Unity game project (COMING SOON...)
   
 ## Documentation
