@@ -19,10 +19,10 @@ export class UserService {
  
   /* 
   private sendLoginUrl = "http://localhost:3000/login"; 
-  private sendSignupUrl = "http://localhost:3000/user"; 
+  private sendSignupUrl = "http://localhost:3000/signup"; 
   private sendLogoutUrl = "http://localhost:3000/logout/";
   private sendResetPasswordUrl = "http://localhost:3000/resetPwdRequest"
-  private submitNewPasswordUrl = "http://localhost:3000/resetPwdSubmit"
+  private submitNewPasswordUrl = "http://localhost:3000/newPwdSubmit"
   */
 
 
