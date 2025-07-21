@@ -44,9 +44,9 @@ export class HomeComponent implements OnInit {
     var buildUrl = "assets/Build";
     var config = {
       //non decompression fallback build for local testing: 
-      //dataUrl: buildUrl + "/localbuild.data.unityweb",
-      //frameworkUrl: buildUrl + "/localbuild.framework.js.unityweb",
-      //codeUrl: buildUrl + "/localbuild.wasm.unityweb",
+      //dataUrl: buildUrl + "/v29_for_local_testing.data.unityweb",
+      //frameworkUrl: buildUrl + "/v29_for_local_testing.framework.js.unityweb",
+      //codeUrl: buildUrl + "/v29_for_local_testing.wasm.unityweb",
       dataUrl: buildUrl + "/v29enabledtest.data.br",
       frameworkUrl: buildUrl + "/v29enabledtest.framework.js.br",
       codeUrl: buildUrl + "/v29enabledtest.wasm.br",
