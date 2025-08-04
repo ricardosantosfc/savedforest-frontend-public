@@ -6,7 +6,10 @@
     "start": "ng serve --open",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "generate-component": "ng generate component --skip-tests",
+    "generate-interface": "ng generate interface",
+    "generate-service": "ng generate service --skip-tests"
   },
   "private": true,
   "dependencies": {
