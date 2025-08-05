@@ -11,5 +11,5 @@ Related saveDforest repositories:
   
 ## Documentation
 
-(https://ricardosantosfc.github.io/savedforest-documentation/savedforest_documentation.pdf) (PDF).  
+[saveDforest Documentation](https://ricardosantosfc.github.io/savedforest-documentation/savedforest_documentation.pdf) (PDF).  
 
