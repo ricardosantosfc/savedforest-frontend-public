@@ -10,3 +10,6 @@ Related saveDforest repositories:
 - savedforest-unity-game - Unity game project (COMING SOON...)
   
 ## Documentation
+
+A PDF document detailing the projects' structure and source code can be found [here](https://ricardosantosfc.github.io/savedforest-documentation/savedforest_documentation.pdf);  
+It also includes prerequisite specifications, setup procedures, and instructions for local execution and deployment. 
