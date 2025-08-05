@@ -11,5 +11,5 @@ Related saveDforest repositories:
   
 ## Documentation
 
-- [saveDforest Documentation](https://ricardosantosfc.github.io/savedforest-documentation/savedforest_documentation.pdf) - Details the projects' structure and source code, along with prerequisite specifications, setup procedures, and instructions for local execution and deployment.
+- [savedforest-documentation](https://ricardosantosfc.github.io/savedforest-documentation/savedforest_documentation.pdf) - Details the projects' structure and source code, along with prerequisite specifications, setup procedures, and instructions for local execution and deployment.
 
