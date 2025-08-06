@@ -5,7 +5,7 @@ This repository contains the Angular frontend project of the web-app that suppor
 
 While the game itself was built using Unity, the web-app that supports it is based on a MEAN stack.
 
-## Related saveDforest repositories:
+## Related saveDforest repositories
 
 - [saveDforest-backend](https://github.com/ricardosantosfc/saveDforest-backend-public) - Backend server of the web-app
 - saveDforest-unity-game - Unity game project (coming soon...)
