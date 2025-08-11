@@ -1,4 +1,4 @@
-# saveDforest Frontend Project
+# saveDforest Front-end Project
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat&logo=angular&logoColor=white)
 
 This repository contains the Angular front-end project of the web-app that supports the 'saveDforest' (v1) game - a browser based, serious game for promoting environmentally sustainable behaviors through empathy. 
