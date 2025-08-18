@@ -1,13 +1,13 @@
 # saveDforest Front-end Project
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat&logo=angular&logoColor=white)
 
-This repository contains the Angular front-end project of the web-app that supports the 'saveDforest' (v1) game - a browser based, serious game for promoting environmentally sustainable behaviors through empathy. 
+This repository contains a copy of the Angular front-end project of the web-app that supports the 'saveDforest' (v1) game - a browser based, serious game for promoting environmentally sustainable behaviors through empathy. 
 
 While the game itself was built using Unity, the web-app that supports it is based on a MEAN stack.
 
 ## Related saveDforest repositories
 
-- [saveDforest-backend](https://github.com/ricardosantosfc/saveDforest-backend-public) - Back-end server of the web-app
+- [saveDforest-backend](https://github.com/ricardosantosfc/saveDforest-backend-public) - Back-end Express server project
 - saveDforest-unity-game - Unity game project (coming soon...)
   
 ## Documentation
