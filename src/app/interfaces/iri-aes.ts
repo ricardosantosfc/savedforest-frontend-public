@@ -1,4 +1,4 @@
-export interface IRI {
+export interface IRI_AES {
     scene: number;
     scoreIRI: number;
     questionsIRIjson: JSON;

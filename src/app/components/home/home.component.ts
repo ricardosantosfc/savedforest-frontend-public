@@ -3,8 +3,8 @@ import {User} from "src/app/interfaces/user";
 import { UserService } from "src/app/services/user.service";
 import {SAM} from "src/app/interfaces/sam";
 import { SamService } from "src/app/services/sam.service";
-import {IRI} from "src/app/interfaces/iri";
-import { IriService } from "src/app/services/iri.service";
+import {IRI_AES} from "src/app/interfaces/iri-aes";
+import { IriAesService } from "src/app/services/iri-aes.service";
 import { NavbarService } from '../../services/navbar.service';
 import { Subscription } from 'rxjs/internal/Subscription';
 import { ActivationEnd, Router } from '@angular/router';
@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
   containerRef!: HTMLElement;
   rootDivRef:HTMLElement | undefined ;
  
-  constructor(private userService: UserService, private samService: SamService, private iriService: IriService,
+  constructor(private userService: UserService, private samService: SamService, private iriAesService: IriAesService,
     private quizService : QuizService, private mobileFormsService : MobileFormsService,
     private navbarService: NavbarService, private router: Router) { }
     
@@ -195,11 +195,11 @@ export class HomeComponent implements OnInit {
 
     (window as any).sendIRI = (scene: number ,scoreIRI: number,questionsIRIjson : JSON, 
       scoreAES: number, questionsAESjson: JSON)=> {
-      this.iriService.sendIRI( {scene,scoreIRI, questionsIRIjson, scoreAES, questionsAESjson} as IRI, this.myGameInstance).subscribe();
+      this.iriAesService.sendIRI_AES( {scene,scoreIRI, questionsIRIjson, scoreAES, questionsAESjson} as IRI_AES, this.myGameInstance).subscribe();
     };
 
     (window as any).updateScoreAndSceneIRI = () => {
-      this.iriService.updateScoreAndSceneIRI(this.myGameInstance).subscribe();
+      this.iriAesService.updateScoreAndSceneIRI_AES(this.myGameInstance).subscribe();
     };
 
     (window as any).sendSAM = (scene: number, arousal: number, valence: number, next_scene:number, score:number) => {

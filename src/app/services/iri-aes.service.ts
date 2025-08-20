@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { IRI } from '../interfaces/iri';
+import { IRI_AES } from '../interfaces/iri-aes';
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Observable, of } from "rxjs";
 import { catchError, tap, timeout } from "rxjs/operators";
@@ -7,13 +7,13 @@ import { catchError, tap, timeout } from "rxjs/operators";
 @Injectable({
   providedIn: 'root'
 })
-export class IriService {
+export class IriAesService {
   
-  private sendIRIurl = "/api/iri";  
-  private updateScoreAndSceneIRIulr = "/api/updateScoreIRI"
+  private sendIRI_AES_url = "/api/iri";  
+  private updateScoreAndSceneIRI_AES_ulr = "/api/updateScoreIRI"
 
-  //private sendIRIurl = "http://localhost:3000/iri"; 
-  //private updateScoreAndSceneIRIulr = "http://localhost:3000/updateScoreIRI"
+  //private sendIRI_AES_url = "http://localhost:3000/iri"; 
+  //private updateScoreAndSceneIRI_AES_ulr = "http://localhost:3000/updateScoreIRI"
   
   //with credentials to include auth cookie on requests
   httpOptions = { 
@@ -24,17 +24,17 @@ export class IriService {
     private http: HttpClient
   ) { }
   
-  sendIRI(iri: IRI, unityInstance: any) {
-    return this.http.post(this.sendIRIurl, iri, this.httpOptions).pipe(
+  sendIRI_AES(iri_aes: IRI_AES, unityInstance: any) {
+    return this.http.post(this.sendIRI_AES_url, iri_aes, this.httpOptions).pipe(
       timeout(80000),
       tap(() => unityInstance.SendMessage('BrowserController', 'SendIRISuccess')), 
       catchError(this.handleError<JSON>(unityInstance,0)),
     );
   }
 
-  updateScoreAndSceneIRI(unityInstance: any) {
+  updateScoreAndSceneIRI_AES(unityInstance: any) {
     const body= ""; //to avoid any errors
-    return this.http.post(this.updateScoreAndSceneIRIulr, body, this.httpOptions).pipe(
+    return this.http.post(this.updateScoreAndSceneIRI_AES_ulr, body, this.httpOptions).pipe(
       timeout(80000),
       tap((res: any) => unityInstance.SendMessage('BrowserController', 'UpdateScoreAndSceneIRISuccess', res.maxScore)), 
       catchError(this.handleError<JSON>(unityInstance,1)) 
