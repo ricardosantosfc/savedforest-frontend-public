@@ -5,7 +5,7 @@ export interface User {
     age: string;
     sex: string;
     nationality: string;
-    edu_level: string;
-    edu_background: string;
-    edu_specify: string;
+    education_level: string;
+    education_background: string;
+    education_background_specified: string;
   }

@@ -176,9 +176,8 @@ export class HomeComponent implements OnInit {
     }
     
     (window as any).sendSignup = (email: string, password: string, username: string, age: string, sex: string, 
-      nationality: string, edu_level: string, edu_background: string, edu_specify: string) => {
-      this.userService.sendSignup({email,password,username, age, sex, nationality, edu_level, edu_background,
-      edu_specify } as User, this.myGameInstance).subscribe();
+      nationality: string, education_level: string, education_background: string, education_background_specified: string) => {
+      this.userService.sendSignup({email,password,username, age, sex, nationality, education_level, education_background, education_background_specified } as User, this.myGameInstance).subscribe();
     }
 
     (window as any).sendLogin = (email: string, password: string ) => {
