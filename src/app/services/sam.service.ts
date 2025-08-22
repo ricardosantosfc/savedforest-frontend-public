@@ -10,10 +10,10 @@ import { catchError, tap, timeout } from "rxjs/operators";
 export class SamService {
  
   private sendSAMurl = "/api/sam"; 
-  private updateScoreAndSceneSAMurl = "/api/updateScoreSAM"
+  private updateScoreAndSceneSAMurl = "/api/updateScoreSam"
 
   //private sendSAMurl = "http://localhost:3000/sam";
-  //private updateScoreAndSceneSAMurl = "http://localhost:3000/updateScoreSAM"
+  //private updateScoreAndSceneSAMurl = "http://localhost:3000/updateScoreSam"
 
   httpOptions = { 
     headers: new HttpHeaders({ "Content-Type": "application/json" } ), withCredentials: true

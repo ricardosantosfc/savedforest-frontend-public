@@ -9,11 +9,11 @@ import { catchError, tap, timeout } from "rxjs/operators";
 })
 export class IriAesService {
   
-  private sendIRI_AES_url = "/api/iri";  
-  private updateScoreAndSceneIRI_AES_ulr = "/api/updateScoreIRI"
+  private sendIRI_AES_url = "/api/iriAes";  
+  private updateScoreAndSceneIRI_AES_ulr = "/api/updateScoreIriAes"
 
-  //private sendIRI_AES_url = "http://localhost:3000/iri"; 
-  //private updateScoreAndSceneIRI_AES_ulr = "http://localhost:3000/updateScoreIRI"
+  //private sendIRI_AES_url = "http://localhost:3000/iriAes"; 
+  //private updateScoreAndSceneIRI_AES_ulr = "http://localhost:3000/updateScoreIriAes"
   
   //with credentials to include auth cookie on requests
   httpOptions = { 
