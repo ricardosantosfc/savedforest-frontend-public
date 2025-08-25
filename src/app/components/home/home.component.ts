@@ -201,12 +201,12 @@ export class HomeComponent implements OnInit {
       this.iriAesService.updateScoreAndSceneIRI_AES(this.myGameInstance).subscribe();
     };
 
-    (window as any).sendSAM = (scene: number, arousal: number, valence: number, next_scene:number, score:number) => {
-      this.samService.sendSAM({ scene, arousal, valence, next_scene, score } as SAM, this.myGameInstance).subscribe();
+    (window as any).sendSAM = (scene: number, arousal: number, valence: number, nextScene:number, score:number) => {
+      this.samService.sendSAM({ scene, arousal, valence, nextScene, score } as SAM, this.myGameInstance).subscribe();
     }
 
-    (window as any).updateScoreAndSceneSAM = (next_scene: number, score: number) => {
-      this.samService.updateScoreAndSceneSAM(next_scene, score, this.myGameInstance).subscribe();
+    (window as any).updateScoreAndSceneSAM = (nextScene: number, score: number) => {
+      this.samService.updateScoreAndSceneSAM(nextScene, score, this.myGameInstance).subscribe();
     };
     
     (window as any).sendQuiz = (quiz: number, score: number, badge: number) => {

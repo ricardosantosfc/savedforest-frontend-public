@@ -31,8 +31,8 @@ export class SamService {
     );
   }
 
-  updateScoreAndSceneSAM(next_scene : number, score: number, unityInstance: any) {
-    const body = {next_scene: next_scene, score:score};
+  updateScoreAndSceneSAM(nextScene : number, score: number, unityInstance: any) {
+    const body = {nextScene: nextScene, score:score};
     return this.http.post(this.updateScoreAndSceneSAMurl, body, this.httpOptions).pipe(
       timeout(80000),
       tap(() => unityInstance.SendMessage('BrowserController', 'SendSAMSuccess')),
